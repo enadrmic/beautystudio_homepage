@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #f6bcbcf0, #99b6cec9);
+}
+nav {
+    width: 60%;
+    padding: 0px;
+    position: sticky;
+    margin: 0px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    left: 35%;
+}
+.logo {
+    padding-top: 0px;
+    padding-left: 150px;
+}
+.logo img {
+    width: 450px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+}
+.nav-links ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+.nav-links ul li a:hover {
+     background-color: #0000001c;
+     color: #ffe3e3;
+     border-radius: 10px 10px 10px 10px;
+}
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 480px;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img {
+    width: 90px;
+}
+.feature {
+    position: absolute;
+    display: flex;
+    color: white;
+}
+.feature div {
+    margin-left: 30px;
+    font-size: 30px;
+}
+.feature div p {
+    margin-top: 8px;
+}
+.one {
+    top: 45%;
+    right: 70%;
+    transform: rotate(180deg);
+
+}
+.two {
+    top: 10%;
+    left: 30%;
+    transform: rotate(-90deg);
+}
+.three {
+    bottom: 48%;
+    left: 65%;
+    transform: rotate(360deg);
+}
+.four {
+    bottom: 19%;
+    left: 38%;
+    transform: rotate(-270deg);
+}
+.studio {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.banner {
+    width: 1100px;
+    position: absolute;
+    top: 46%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 56%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 25px auto;
+    color: #ffffff;
+    font-size: 20px;
+}
+#upBtn {
+    width: 25px;
+    cursor: pointer;
+}
+#downBtn {
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
